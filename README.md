@@ -6,3 +6,6 @@
 ## Obsah repozitáře
 - Webové stránky projektu (Frontend a jednoduchý Backend)
 - Ilustrační obrázky související s projektem
+
+## Web Developeři
+- Repozitář spravují: [Jan Krupa](https://github.com/krupa-jan)
