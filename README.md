@@ -8,4 +8,4 @@
 - Ilustrační obrázky související s projektem
 
 ## :computer: Web Developeři
-- Webové stránky vyvíjí: [Jan Krupa](https://github.com/krupa-jan)
+- Vývoj a správa: [Jan Krupa](https://github.com/krupa-jan), Petr Ammerling
