@@ -8,4 +8,4 @@
 - Ilustrační obrázky související s projektem
 
 ## :computer: Web Developeři
-- Vývoj a správa: [Jan Krupa](https://github.com/krupa-jan), Petr Ammerling
+- Vývoj a správa: [Jan Krupa](https://github.com/krupa-jan), Petr Ammerling(https://github.com/normalnijmeno)
