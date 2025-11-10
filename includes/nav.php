@@ -5,9 +5,7 @@
         </a>
     </div>
 
-    <div>
-
-    </div>
+    <div class="nav-space"></div>
     
     <div>
         <a href="index.html">Home</a>

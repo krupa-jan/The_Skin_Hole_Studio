@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Skin Hole Studio</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
 </head>
 <body>
     <header>
         <!--Nav-->
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php'; ?>
     </header>
-    
+
     <!--Footer-->
     <?php require $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
 </body>
