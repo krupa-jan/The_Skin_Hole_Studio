@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Skin Hole Studio</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <?php require $_SERVER['DOCUMENT_ROOT'] . '/Content/nav.php'; ?>
-
-
-
-
+    <header>
+        <!--Nav-->
+        <?php require $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php'; ?>
+    </header>
+    
+    <!--Footer-->
+    <?php require $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
 </body>
 </html>
