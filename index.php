@@ -11,10 +11,10 @@
 <body>
     <header>
         <!--Nav-->
-        <?php require $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php'; ?>
+        <?php require 'includes/nav.php'; ?>
     </header>
 
     <!--Footer-->
-    <?php require $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
+    <?php require 'includes/footer.php'; ?>
 </body>
 </html>
