@@ -6,20 +6,16 @@
             </a>
         </div>
 
-        <div class="nav-space"></div>
-
-        <!--
         <ul class="desktop-nav">
             <li><a href="index.html">Odkaz0</a></li>
             <li><a href="index.html">Odkaz1</a></li>
             <li><a href="index.html">Odkaz2</a></li>
             <li><a href="index.html">Odkaz3</a></li>
+            <li class="hamburger-button" onclick=showHamburgerNav(event)><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
         </ul>
 
-        -->
     </div>
 
-    
     <ul class="hamburger-nav">
             <li><a href="index.html">Odkaz0</a></li>
             <li><a href="index.html">Odkaz1</a></li>
@@ -27,3 +23,5 @@
             <li><a href="index.html">Odkaz3</a></li>
     </ul>
 </nav>
+
+<script src="assets/js/nav.js"></script>
