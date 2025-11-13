@@ -7,12 +7,23 @@
         </div>
 
         <div class="nav-space"></div>
-    
-        <div>
-            <a href="index.html">Home</a>
-            <a href="index.html">Odkaz1</a>
-            <a href="index.html">Odkaz2</a>
-            <a href="index.html">Odkaz3</a>
-        </div>
+
+        <!--
+        <ul class="desktop-nav">
+            <li><a href="index.html">Odkaz0</a></li>
+            <li><a href="index.html">Odkaz1</a></li>
+            <li><a href="index.html">Odkaz2</a></li>
+            <li><a href="index.html">Odkaz3</a></li>
+        </ul>
+
+        -->
     </div>
+
+    
+    <ul class="hamburger-nav">
+            <li><a href="index.html">Odkaz0</a></li>
+            <li><a href="index.html">Odkaz1</a></li>
+            <li><a href="index.html">Odkaz2</a></li>
+            <li><a href="index.html">Odkaz3</a></li>
+    </ul>
 </nav>
