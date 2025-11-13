@@ -17,10 +17,12 @@
     </div>
 
     <ul class="hamburger-nav">
+            <li class="close-button" onclick=hideHamburgerNav(event)><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
             <li><a href="index.html">Odkaz0</a></li>
             <li><a href="index.html">Odkaz1</a></li>
             <li><a href="index.html">Odkaz2</a></li>
             <li><a href="index.html">Odkaz3</a></li>
+
     </ul>
 </nav>
 
