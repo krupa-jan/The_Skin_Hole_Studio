@@ -1,0 +1,13 @@
+.o-nas-hlava {
+    width: 100%;
+    background-color: pink;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.o-nas-hlava {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+    color: black;
+}

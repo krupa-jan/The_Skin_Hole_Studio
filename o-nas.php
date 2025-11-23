@@ -14,7 +14,9 @@
         <!--Nav-->
         <?php require 'includes/nav.php'; ?>
     </header>
-
+<div class="o-nas-hlava">
+    <h1>O nás</h1>
+</div>
     <!--Footer-->
     <?php require 'includes/footer.php'; ?>
 </body>
