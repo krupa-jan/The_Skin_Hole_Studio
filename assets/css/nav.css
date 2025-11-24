@@ -22,20 +22,31 @@ nav {
     height: 100%;
     padding: 0px 20px;
     text-decoration: none;
-    display: flex;
     align-items: center;
     color: rgb(46, 42, 57);
+    display: flex;
 }
 
 .desktop-nav li:hover {
     background-color: rgba(46, 42, 57, 0.04);
 }
 
+.desktop-nav > li {
+    display: none;
+}
+
+.desktop-nav > li.hamburger-button {
+    display: block;
+}
+
+.desktop-nav > li.close-button {
+    display: none;
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
-    background-color: gray; /*Dočasně*/
-    margin: 0px 15px 15px 15px;
+    background-image: radial-gradient(rgb(253, 199, 223) 4%, rgb(249, 181, 205) 79%, rgb(242, 153, 201) 100%, rgb(249, 209, 229) 100%)
 }
 
 .nav-logo {
@@ -45,14 +56,12 @@ nav {
 /*Hamburger Navigace*/
 .hamburger-nav {
     position: fixed;
-    top: 0;
-    right: 0;
     height: 100vh;
     width: 100%;
     z-index: 1000;
     background-color: white;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: flex-start;
     display: none; /*Výchozí stav - skryté*/
 }
@@ -76,7 +85,13 @@ nav {
 
 /*Tablet*/
 @media (min-width: 768px) {
+    .desktop-nav > li {
+        display: block;
+    }
 
+    .desktop-nav > li.hamburger-button {
+        display: none;
+    }
 }
 
 /*Počítač*/
