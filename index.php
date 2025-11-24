@@ -6,12 +6,9 @@
 </head>
 
 <body>
-    <header>
-        <!--Nav-->
-        <?php require 'includes/nav.php'; ?>
-    </header>
+    <?php require 'includes/nav.php'; ?>
 
-    <!--Footer-->
+    
     <?php require 'includes/footer.php'; ?>
 </body>
 
