@@ -1,8 +1,130 @@
+nav {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*Desktop Navigace*/
+.desktop-nav {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.desktop-nav li {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.desktop-nav a {
+    height: 100%;
+    padding: 0px 20px;
+    text-decoration: none;
+    align-items: center;
+    color: rgb(46, 42, 57);
+    display: flex;
+}
+
+.desktop-nav li:hover {
+    background-color: rgba(46, 42, 57, 0.04);
+}
+
+.desktop-nav > li {
+    display: none;
+}
+
+.desktop-nav > li.hamburger-button {
+    display: block;
+}
+
+.desktop-nav > li.close-button {
+    display: none;
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
+    background-image: radial-gradient(rgb(253, 199, 223) 4%, rgb(249, 181, 205) 79%, rgb(242, 153, 201) 100%, rgb(249, 209, 229) 100%)
 }
 
 .nav-logo {
-    height: 70px;
+    height: 55px;
+    margin: 0px 15px;
+}
+
+/*Hamburger Navigace*/
+.hamburger-nav {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    border-top: 1px solid rgb(77, 77, 77);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    padding-top: 10px;
+    background-color: white;
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    display: flex;
+
+    transform: translateX(-100%);
+    transition: transform 0.2s ease-in-out;
+}
+
+.hamburger-nav.active {
+    transform: translateX(0);
+}
+
+.hamburger-nav li {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 11px 30px;
+}
+
+.hamburger-nav li:hover {
+    background-color: rgba(46, 42, 57, 0.04);
+}
+
+.hamburger-nav a {
+    text-decoration: none;
+    color: rgb(46, 42, 57);
+}
+
+/*Overlay (Ztmavení pozadí při otevírání hamburger menu)*/
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+    .desktop-nav > li {
+        display: block;
+    }
+
+    .desktop-nav > li.hamburger-button {
+        display: none;
+    }
+}
+
+/*Počítač*/
+@media (min-width: 1024px) {
+
 }
