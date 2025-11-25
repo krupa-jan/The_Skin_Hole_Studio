@@ -1,49 +1,104 @@
 .o-nas-hlava {
-    width: 100%;
-    background-color: pink;
-    padding: 40px 20px;
     text-align: center;
+    padding: 25px 15px;
+    background: pink;
 }
-
 .o-nas-hlava h1 {
-    margin: 0;
-    font-size: 32px;
-    font-weight: 600;
-    color: black;
+    font-size: 26px;
 }
+
 .o-nas-text {
-    max-width: 900px;
-    margin: 40px;
-    padding: 0 20px;
+    padding: 0 15px;
+    margin: 20px;
+}
+.o-nas-text h2 {
+    font-size: 24px;
+}
+.o-nas-text p {
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-.o-nas-text h2 {
-    font-size: 50px;
-    margin-bottom: 10px;
-    color: black;
-} 
+.o-nas-2 {
+    padding: 0 15px;
+    margin: 20px
+}
+.o-nas-2 h2 {
+    font-size: 24px;
+}
+.o-nas-2 p {
+    font-size: 16px;
+    line-height: 1.5;
+}
 
-.o-nas-text p {
-    font-size: 23px;
-    line-height: 1.6;
-    color: black;
+.o-nas-3 {
+    padding: 0 15px;
+    margin: 20px;
+}
+.o-nas-3 h2 {
+    font-size: 24px;
+}
+.o-nas-3 p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.o-nas-4 {
+    padding: 0 15px;
+    margin: 20px;
+}
+.o-nas-4 h2 {
+    font-size: 24px;
+}
+.o-nas-4 p {
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .o-nas-kontakt {
-    width: 100%;
-    background-color: pink;
-    padding: 40px 20px;
-    margin-top: 50px;
+    background: pink;
+    padding: 25px 15px;
+    margin-top: 30px;
 }
-
 .o-nas-kontakt h2 {
-    margin-top: 0;
-    font-size: 30px;
-    color: black;
+    font-size: 22px;
+}
+.o-nas-kontakt p {
+    font-size: 16px;
 }
 
-.o-nas-kontakt p {
-    font-size: 20px;
-    color: black;
-    margin: 5px 0;
+@media (min-width: 700px) {
+    .o-nas-hlava h1 {
+        font-size: 32px;
+    }
+    .o-nas-text h2 {
+        font-size: 40px;
+    }
+    .o-nas-text p {
+        font-size: 20px;
+    }
+    .o-nas-2 h2 {
+        font-size: 40px;
+    }
+    .o-nas-2 p {
+        font-size: 20px;
+    }
+     .o-nas-3 h2 {
+        font-size: 40px;
+    }
+    .o-nas-3 p {
+        font-size: 20px;
+    }
+     .o-nas-4 h2 {
+        font-size: 40px;
+    }
+    .o-nas-4 p {
+        font-size: 20px;
+    }
+    .o-nas-kontakt h2 {
+        font-size: 40px;
+    }
+    .o-nas-kontakt p {
+        font-size: 20px;
+    }
 }

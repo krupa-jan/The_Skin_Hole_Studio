@@ -18,8 +18,32 @@
     <h1>O nás</h1>
 </div>
 <div class="o-nas-text">
-    <h2>Kdo jsme?</h2>
-    <p>The Skin Hole Studio je tetovací a piercingové studio sídlící v srdci Frýdku-Místku. Naším cílem je poskytovat kvalitní služby v oblasti tetování a piercingu, které splňují nejvyšší standardy hygieny a bezpečnosti. Náš tým tvoří zkušení a talentovaní umělci, kteří jsou vášniví pro své řemeslo a neustále se snaží zlepšovat své dovednosti.</p>
+    <h2>Nadpis 1</h2>
+    <p>----------------</p>
+    <p>Obrazek</p>
+    <p>----------------</p>
+    <p>Libertate concipiam aliquanto ad vereorque se ac. Nihilque meliores vel generali spectant sae speranda cui supponam. Debiliora spontaneo praeditis suspicari ea at. Fit quovis melius rum statim iis indere eas nomine. Facultates imaginabar labefactat se producatur et objectivam ii ex. Sap ubi sufficeret patrocinio objectioni mea. Sua ita mirum utili vix hodie verba viris sitas.</p>
+</div>
+<div class="o-nas-2">
+    <h2>Nadpis 2</h2>
+    <p>----------------</p>
+    <p>Obrazek</p>
+    <p>----------------</p>
+    <p>Opinionis calescere se mentemque immittant ne animalium productus de in. Rationi petebat punctum rotunda re co conatus aliquis ac. Contingit continent veritatem opinionem in de meditatio. Re liberet eo positis limites co im</p>
+</div>
+<div class="o-nas-3">
+    <h2>Nadpis 3</h2>
+    <p>----------------</p>
+    <p>Obrazek</p>
+    <p>----------------</p>
+    <p>Opinionis calescere se mentemque immittant ne animalium productus de in. Rationi petebat punctum rotunda re co conatus aliquis ac. Contingit continent veritatem opinionem in de meditatio. Re liberet eo positis limites co im</p>
+</div>
+<div class="o-nas-4">
+    <h2>Nadpis 4</h2>
+    <p>----------------</p>
+    <p>Obrazek</p>
+    <p>----------------</p>
+    <p>Opinionis calescere se mentemque immittant ne animalium productus de in. Rationi petebat punctum rotunda re co conatus aliquis ac. Contingit continent veritatem opinionem in de meditatio. Re liberet eo positis limites co im</p>
 </div>
 <div class="o-nas-kontakt">
     <h2>Kontakt</h2>
