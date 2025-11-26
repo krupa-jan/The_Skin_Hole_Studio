@@ -22,7 +22,7 @@
             $name = $service['name'];
             $image = $service['image'];
         
-            include 'includes/services/service_template.php'; 
+            include 'includes/service_template.php'; 
         }
     
         ?>
