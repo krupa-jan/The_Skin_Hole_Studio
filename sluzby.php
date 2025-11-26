@@ -12,7 +12,7 @@
         <?php
     
         $services = [
-            ["name" => "Služba1", "image" => ""],
+            ["name" => "Služba1", "image" => "assets/images/logo/Logo_500x500_Transparent.webp"],
             ["name" => "Služba2", "image" => ""],
             
         ];
