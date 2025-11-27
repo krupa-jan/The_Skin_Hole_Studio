@@ -1,0 +1,41 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+    margin: 10px 30px;
+
+    background-color: #fdb7b7;
+    border-radius: 20px;
+
+    width: 90%;
+}
+
+.product-image {
+    width: 30%;
+    margin: 20px 20px;
+}
+
+.product-side {
+    
+}
+
+.product-title {
+
+}
+
+.product-price {
+
+}
+
+.product-button {
+    
+}

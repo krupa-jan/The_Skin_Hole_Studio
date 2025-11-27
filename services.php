@@ -12,8 +12,8 @@
         <?php
     
         $services = [
-            ["name" => "Služba1", "price" => "10 000", "discount" => "", "image" => "assets/images/logo/Logo_500x500_Transparent.webp"],
-            ["name" => "Služba2", "price" => "2 000", "discount" => "", "image" => "assets/images/logo/Logo_500x500_Transparent.webp"],
+            ["name" => "Služba1", "price" => "10 000", "discount" => "", "image" => "assets/images/Example_product.webp"],
+            ["name" => "Služba2", "price" => "2 000", "discount" => "", "image" => "assets/images/Example_product.webp"],
             
         ];
 
