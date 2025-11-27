@@ -12,17 +12,19 @@
         <?php
     
         $services = [
-            ["name" => "Služba1", "image" => "assets/images/logo/Logo_500x500_Transparent.webp"],
-            ["name" => "Služba2", "image" => ""],
+            ["name" => "Služba1", "price" => "10 000", "discount" => "", "image" => "assets/images/logo/Logo_500x500_Transparent.webp"],
+            ["name" => "Služba2", "price" => "2 000", "discount" => "", "image" => "assets/images/logo/Logo_500x500_Transparent.webp"],
             
         ];
 
         foreach ($services as $service) {
 
             $name = $service['name'];
+            $price = $service['price'];
+            $discount = $service['discount'];
             $image = $service['image'];
         
-            include 'includes/service_template.php'; 
+            include 'includes/services/service_template.php'; 
         }
     
         ?>
