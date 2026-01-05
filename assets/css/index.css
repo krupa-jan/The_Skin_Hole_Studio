@@ -1,0 +1,131 @@
+.top-section {
+    margin-top: 60px;
+
+    width: 100%;
+    height: 80vh;
+
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+        url('/assets/images/example_images/store-example.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px
+}
+
+.top-section-logo {
+    display: block;
+
+    width: 70%;
+    height: auto;
+
+    max-width: 350px;
+
+    animation: zoom-in-out 3s ease-in-out infinite;
+}
+
+@keyframes zoom-in-out {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.top-section-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.cta-button-primary {
+    display: inline-block;
+    
+    background-color: #ffffff;
+    color: #121212;
+
+    padding: 15px 35px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    border-radius: 30px;
+    border: 2px solid;
+    border-color: #ffffff;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    width: 280px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.cta-button-primary:hover {
+    background-color: #EE5D7A; /* Zde dej přesný kód růžové z loga */
+    color: #ffffff;
+    transform: translateY(-2px); 
+    box-shadow: 0 5px 15px rgba(238, 93, 122, 0.4);
+}
+
+.cta-button-secondary {
+    display: inline-block;
+
+    background-color: transparent;
+    color: #ffffff;
+
+    padding: 15px 35px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    
+    border-radius: 30px;
+    border: 2px solid;
+    border-color: #ffffff;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    width: 280px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.cta-button-secondary:hover {
+    background-color: #ffffff;
+    color: #121212;
+    transform: translateY(-2px);
+}
+
+/*========== TABLET ===========*/
+@media (min-width: 768px) {
+
+}
+
+/*========== POČÍTAČ ==========*/
+@media (min-width: 1024px) {
+    .top-section-cta {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+/*========== VELKÉ MONITORY (FullHD a více) ==========*/
+@media (min-width: 1600px) {
+    
+}

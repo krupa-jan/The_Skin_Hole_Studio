@@ -11,6 +11,14 @@
 <body>
     <?php require 'includes/nav.php'; ?>
 
+    <div class="top-section">
+        <img src="/assets/images/logo/logo.svg" class="top-section-logo">
+
+        <div class="top-section-cta">
+            <a href="#" class="cta-button-primary">Rezervovat termín</a>
+            <a href="#" class="cta-button-secondary">Všechny služby</a>
+        </div>
+    </div>
     
     <?php require 'includes/footer.php'; ?>
 </body>
