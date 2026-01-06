@@ -2,7 +2,7 @@
     margin-top: 60px;
 
     width: 100%;
-    height: 80vh;
+    height: 80svh;
 
     background-image: 
         linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
@@ -10,6 +10,8 @@
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
+
+    background-attachment: scroll;
 
     display: flex;
     flex-direction: column;
@@ -123,6 +125,7 @@
         flex-direction: row;
         gap: 20px;
     }
+
 }
 
 /*========== VELKÉ MONITORY (FullHD a více) ==========*/

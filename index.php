@@ -5,7 +5,7 @@
 
     <?php require 'includes/html_head.php'; ?>
 
-    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/sites/index.css">
 </head>
 
 <body>

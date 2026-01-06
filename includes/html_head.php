@@ -11,4 +11,4 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
 
 <link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/o-nas.css">
+<link rel="stylesheet" href="assets/css/sites/o-nas.css">

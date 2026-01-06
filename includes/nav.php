@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" href="/assets/css/nav.css">
+    <link rel="stylesheet" href="/assets/css/elements/nav.css">
 </head>
 
 <nav>
