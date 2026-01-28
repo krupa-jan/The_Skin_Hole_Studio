@@ -1,0 +1,247 @@
+/*========== HLAVNÍ SEKCE ==========*/
+.top-section {
+    margin-top: 60px;
+
+    width: 100%;
+    height: 80svh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    position: relative;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.top-section-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    
+    z-index: -999;
+}
+
+.top-section-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
+    
+    z-index: -998; 
+}
+
+.top-section-logo {
+    display: block;
+
+    width: 70%;
+    height: auto;
+
+    max-width: 350px;
+
+    animation: zoom-in-out 3s ease-in-out infinite;
+}
+
+@keyframes zoom-in-out {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.top-section-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.cta-button-primary {
+    display: inline-block;
+    
+    background-color: #ffffff;
+    color: #121212;
+
+    padding: 15px 35px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    border-radius: 30px;
+    border: 2px solid;
+    border-color: #ffffff;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    width: 280px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.cta-button-primary:hover {
+    background-color: #EE5D7A; /* Zde dej přesný kód růžové z loga */
+    color: #ffffff;
+    transform: translateY(-2px); 
+    box-shadow: 0 5px 15px rgba(238, 93, 122, 0.4);
+}
+
+.cta-button-secondary {
+    display: inline-block;
+
+    background-color: transparent;
+    color: #ffffff;
+
+    padding: 15px 35px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    
+    border-radius: 30px;
+    border: 2px solid;
+    border-color: #ffffff;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    width: 280px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.cta-button-secondary:hover {
+    background-color: #ffffff;
+    color: #121212;
+    transform: translateY(-2px);
+}
+
+/*========== SLUŽBY ==========*/
+
+/*========== O NÁS ==========*/
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 70px 20px;
+}
+
+.about-section-image {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.about-section-image img{
+    width: 100%;
+    border-radius: 25px;
+    display: block;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    object-fit: cover;
+}
+
+.about-section-content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-section-content h2 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-section-content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/*========== TABLET ===========*/
+@media (min-width: 768px) {
+    .about-section {
+        flex-direction: row; 
+        gap: 30px;
+        margin: 60px 30px; 
+    }
+    .about-section-image {
+        flex: 1;
+        margin: 0;
+    }
+    .about-section-content {
+        flex: 1;
+        margin: 0;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .about-section-content h2 {
+        font-size: 24px; 
+        margin-bottom: 15px;
+    }
+    .about-section-content p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+/*========== POČÍTAČ ==========*/
+@media (min-width: 1024px) {
+    .top-section-cta {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .about-section {
+        margin: 100px auto;
+        width: 90%;
+        max-width: 1200px;
+        gap: 60px;
+    }
+    .about-section-content h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .about-section-content p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+}
+
+/*========== VELKÉ MONITORY (FullHD a více) ==========*/
+@media (min-width: 1600px) {
+    .about-section {
+        max-width: 1500px; 
+    }
+
+    .about-section-content h2 {
+        font-size: 42px;
+    }
+
+    .about-section-content p {
+        font-size: 22px;
+    }
+}
