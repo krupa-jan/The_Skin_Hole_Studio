@@ -1,3 +1,10 @@
+.sekce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .uvodni-obrazek-wrapper {
     width: 95%;
     height: 50vh;
@@ -18,6 +25,8 @@
     margin: 40px;
     border-radius: 12px;
     background: pink;
+
+    margin-top: 80px;
 }
 .o-nas-hlava h1 {
     font-size: 40px;
@@ -27,6 +36,7 @@
     text-align: center;
     padding: 0 15px;
     margin: 20px;
+    max-width: 1200px;
 }
 .o-nas-1 h2 {
     font-size: 24px;
@@ -35,12 +45,14 @@
 .o-nas-1 p {
     font-size: 16px;
     line-height: 1.5;
+    margin-top: 15px;
 }
 
 .o-nas-2 {
     text-align: center;
     padding: 0 15px;
-    margin: 20px
+    margin: 20px;
+    max-width: 1200px;
 }
 .o-nas-2 h2 {
     font-size: 24px;
@@ -49,12 +61,14 @@
 .o-nas-2 p {
     font-size: 16px;
     line-height: 1.5;
+    margin-top: 15px;
 }
 
 .o-nas-3 {
     text-align: center;
     padding: 0 15px;
     margin: 20px;
+    max-width: 1200px;
 }
 .o-nas-3 h2 {
     font-size: 24px;
@@ -63,12 +77,14 @@
 .o-nas-3 p {
     font-size: 16px;
     line-height: 1.5;
+    margin-top: 15px;
 }
 
 .o-nas-4 {
     text-align: center;
     padding: 0 15px;
     margin: 20px;
+    max-width: 1200px;
 }
 .o-nas-4 h2 {
     font-size: 24px;
@@ -77,6 +93,7 @@
 .o-nas-4 p {
     font-size: 16px;
     line-height: 1.5;
+    margin-top: 15px;
 }
 
 .o-nas-kontakt {
