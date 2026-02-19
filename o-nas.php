@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-    <title>The Skin Hole Studio</title>
+    <title>O Nás | The Skin Hole Studio</title>
 
     <?php require 'includes/html_head.php'; ?>
 
-    <link rel="stylesheet" href="assets/css/sites/o-nas.css">
+    <link rel="stylesheet" href="/assets/css/sites/o-nas.css">
 </head>
 
 <body>

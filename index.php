@@ -18,7 +18,7 @@
         <img src="/assets/images/logo/logo.svg" class="top-section-logo" draggable="false">
 
         <div class="top-section-cta">
-            <a href="#" class="cta-button-primary">Rezervovat termín</a>
+            <a href="/rezervace" class="cta-button-primary">Rezervovat termín</a>
             <a href="#" class="cta-button-secondary">Všechny služby</a>
         </div>
     </div>

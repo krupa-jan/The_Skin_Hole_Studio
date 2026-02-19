@@ -98,7 +98,7 @@
 }
 
 .cta-button-primary:hover {
-    background-color: #EE5D7A; /* Zde dej přesný kód růžové z loga */
+    background-color: #EE5D7A;
     color: #ffffff;
     transform: translateY(-2px); 
     box-shadow: 0 5px 15px rgba(238, 93, 122, 0.4);
