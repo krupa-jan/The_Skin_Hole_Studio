@@ -39,6 +39,42 @@
             
         </div>
     </div>
+
+    <div class="instagram-section">
+        
+        <div class="ig-header">
+            <h2><i class="fab fa-instagram"></i> Sleduj nás!</h2>
+        </div>
+        
+        <div class="instagram-grid">
+            <a href="https://www.instagram.com/p/DVx6hemDXNo/" target="_blank" class="instagram-post">
+                <img src="/assets/images/instagram/ig3.webp" alt="Instagram post" draggable="false">
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+            
+            <a href="https://www.instagram.com/p/DThrh0IDfF2/" target="_blank" class="instagram-post">
+                <img src="/assets/images/instagram/ig2.webp" alt="Instagram post" draggable="false">
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/p/DQChOYECLrl/" target="_blank" class="instagram-post">
+                <img src="/assets/images/instagram/ig1.webp" alt="Instagram post" draggable="false">
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+        </div>
+
+        <div class="instagram-cta">
+            <a href="https://www.instagram.com/theskinholestudio/" target="_blank" class="cta-button-instagram">
+                Sledovat
+            </a>
+        </div>
+    </div>
     
     <?php require 'includes/footer.php'; ?>
 </body>

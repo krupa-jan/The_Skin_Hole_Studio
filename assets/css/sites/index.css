@@ -52,6 +52,7 @@
     animation: zoom-in-out 3s ease-in-out infinite;
 }
 
+
 @keyframes zoom-in-out {
     0% {
         transform: scale(1); 
@@ -170,7 +171,7 @@
 
 .about-section-content h2 {
     font-weight: 700;
-    font-size: 28px;
+    font-size: 36px;
     margin-bottom: 10px;
 }
 
@@ -178,6 +179,129 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
+}
+
+/*========== INSTAGRAM SEKCE ==========*/
+.instagram-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 20px;
+}
+
+/* Hlavička sladěná s "O Nás" */
+.ig-header {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.ig-header h2 {
+    display: flex;
+    align-items: center; /* Zarovná ikonku a text na střed výšky */
+    gap: 12px;           /* Mezera mezi ikonkou a slovem */
+    font-weight: 700;
+    font-size: 36px;     /* Kopíruje "O Nás" základ */
+    margin: 0;
+    color: #121212;
+}
+
+.ig-header h2 i {
+    color: #EE5D7A;      /* Ikonka v růžové barvě pro oživení */
+    font-size: 1.1em;    /* Aby byla ikonka opticky stejně velká jako text */
+}
+
+/* Mřížka fotek */
+.instagram-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Zpátky pod sebou */
+    gap: 25px; /* Trochu větší mezera mezi fotkami, když jsou pod sebou */
+    width: 100%;
+    
+    /* Tohle je to kouzlo, co zabrání gigantickým rozměrům na mobilu */
+    max-width: 340px; 
+    
+    margin: 0 auto 40px auto; /* Vycentruje mřížku uprostřed obrazovky */
+}
+
+.instagram-post {
+    position: relative;
+    display: block;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.instagram-post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Růžový překryv */
+.instagram-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(238, 93, 122, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.instagram-overlay i {
+    color: #ffffff;
+    font-size: 30px;
+    transform: translateY(15px);
+    transition: transform 0.3s ease;
+}
+
+.instagram-post:hover img {
+    transform: scale(1.08);
+}
+
+.instagram-post:hover .instagram-overlay {
+    opacity: 1;
+}
+
+.instagram-post:hover .instagram-overlay i {
+    transform: translateY(0);
+}
+
+/* Tlačítko - Sladěné se zbytkem webu */
+.cta-button-instagram {
+    display: inline-block; /* Změněno z flex, už nemáme ikonku */
+    background-color: #EE5D7A;
+    color: #ffffff;
+    padding: 15px 35px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 2px solid #EE5D7A;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+    /* Přidáno pro sjednocení s .cta-button-primary */
+    width: 280px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.cta-button-instagram:hover {
+    background-color: transparent;
+    color: #EE5D7A;
+    transform: translateY(-2px); 
 }
 
 /*========== TABLET ===========*/
@@ -198,12 +322,24 @@
         text-align: left;
     }
     .about-section-content h2 {
-        font-size: 24px; 
+        font-size: 32px; 
         margin-bottom: 15px;
     }
     .about-section-content p {
         font-size: 16px;
         line-height: 1.5;
+    }
+    
+    
+
+
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 vedle sebe */
+        max-width: 1000px; /* Vrátíme plnou šířku pro větší displeje */
+        gap: 20px;
+    }
+    .ig-header h2 {
+        font-size: 32px; /* Kopíruje O nás pro tablet */
     }
 }
 
@@ -221,13 +357,30 @@
         gap: 60px;
     }
     .about-section-content h2 {
-        font-size: 30px;
+        font-size: 42px;
         margin-bottom: 15px;
     }
 
     .about-section-content p {
         font-size: 18px;
         line-height: 1.6;
+    }
+    
+
+
+    .instagram-section {
+        margin: 100px auto;
+        width: 90%;
+        max-width: 1200px;
+    }
+    .instagram-grid {
+        gap: 30px;
+    }
+    .ig-header {
+        margin-bottom: 40px;
+    }
+    .ig-header h2 {
+        font-size: 42px; /* Kopíruje O nás pro PC */
     }
 }
 
@@ -238,10 +391,18 @@
     }
 
     .about-section-content h2 {
-        font-size: 42px;
+        font-size: 52px;
     }
 
     .about-section-content p {
+        font-size: 22px;
+    }
+
+
+    .ig-header h2 {
+        font-size: 52px; /* Kopíruje O nás pro velké monitory */
+    }
+    .ig-header {
         font-size: 22px;
     }
 }
