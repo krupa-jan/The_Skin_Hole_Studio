@@ -1,0 +1,124 @@
+.site-footer {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 60px 20px 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+/* Nadpisy sekcí */
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.footer-section.brand h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.1;
+}
+
+.brand-text {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #f45277;
+}
+
+.brand-studio {
+    font-size: 1rem;
+    letter-spacing: 4px;
+    color: #f45277;
+    text-transform: uppercase;
+}
+
+.footer-section p {
+    color: #b3b3b3;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.footer-section.contact p i {
+    color: #666; 
+    width: 20px; 
+    text-align: center;
+}
+
+/* Stylování odkazů */
+.footer-section.links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section.links li {
+    margin-bottom: 12px;
+}
+
+.footer-section.links a {
+    color: #b3b3b3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.footer-section.links a:hover {
+    color: #f45277;
+}
+
+.socials {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    color: #b3b3b3;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.socials a i {
+    font-size: 1.3rem;
+}
+
+.socials a:hover {
+    border-color: #f45277;
+    background-color: #f45277;
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 50px;
+    border-top: 1px solid #222;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+
+
+
