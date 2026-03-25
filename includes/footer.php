@@ -18,6 +18,7 @@
             <ul>
                 <li><a href="/">Domů</a></li>
                 <li><a href="/o-nas">O Nás</a></li>
+                <li><a href="/rezervace">Rezervace</a></li>
             </ul>
         </div>
 

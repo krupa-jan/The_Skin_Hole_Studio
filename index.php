@@ -19,7 +19,7 @@
 
         <div class="top-section-cta">
             <a href="/rezervace" class="cta-button-primary">Rezervovat termín</a>
-            <a href="#" class="cta-button-secondary">Všechny služby</a>
+            <a href="/o-nas" class="cta-button-secondary">O nás</a>
         </div>
     </div>
 
