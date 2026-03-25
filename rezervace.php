@@ -53,14 +53,20 @@
                 <div id="tab-nos" class="tab-content">
                     <div class="services-grid">
                         <?php 
+                        foreach ($produkty_nos as $produkt) {
+                            include 'includes/rezervace/rezervace_template.php';
+                        } 
                         ?>
-                        <p>Nabídka pro nos se připravuje...</p>
                     </div>
                 </div>
 
                 <div id="tab-usta" class="tab-content">
                     <div class="services-grid">
-                        <p>Nabídka pro ústa se připravuje...</p>
+                        <?php 
+                        foreach ($produkty_usta_oblicej as $produkt) {
+                            include 'includes/rezervace/rezervace_template.php';
+                        } 
+                        ?>
                     </div>
                 </div>
 
