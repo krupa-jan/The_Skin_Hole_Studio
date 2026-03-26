@@ -1,154 +1,206 @@
-.sekce {
+/* --- PROMĚNNÉ --- */
+:root {
+    --primary-pink: #f05a88;
+    --hover-pink: #d84570;
+    --bg-light: #fafafa;
+    --text-dark: #222;
+    --text-gray: #666;
+}
+
+body {
+    background-color: var(--bg-light);
+}
+
+.about-section {
+    padding: 40px 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.page-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0 0 10px 0;
+}
+
+.page-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-gray);
+    margin: 0;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.employee-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
-.uvodni-obrazek-wrapper {
-    width: 95%;
-    height: 50vh;
-    overflow: hidden;
-    margin: 20px auto;
-    border-radius: 30px;
-}
-.uvodni-obrazek-wrapper img {
-    width: 100%;
-    height: 100%;
+.employee-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
     object-fit: cover;
-    object-position: center;
+    border: 4px solid var(--primary-pink);
+    box-shadow: 0 10px 25px rgba(240, 90, 136, 0.3);
 }
 
-.o-nas-hlava {
-    text-align: center;
-    padding: 25px 15px;
-    margin: 40px;
+.employee-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.employee-info h2 {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    margin: 0 0 5px 0;
+}
+
+.employee-info .role {
+    font-size: 1rem;
+    color: var(--primary-pink);
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+
+.employee-info .description {
+    color: var(--text-gray);
+    line-height: 1.5;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+/* --- KONTAKTNÍ BOXY --- */
+.contact-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.contact-box {
+    background-color: var(--primary-pink);
+    color: #fff;
+    padding: 12px 18px;
     border-radius: 12px;
-    background: pink;
-
-    margin-top: 80px;
-}
-.o-nas-hlava h1 {
-    font-size: 40px;
-}
-
-.o-nas-1 {
-    text-align: center;
-    padding: 0 15px;
-    margin: 20px;
-    max-width: 1200px;
-}
-.o-nas-1 h2 {
-    font-size: 24px;
-    margin: 20px;
-}
-.o-nas-1 p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-top: 15px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s;
 }
 
-.o-nas-2 {
-    text-align: center;
-    padding: 0 15px;
-    margin: 20px;
-    max-width: 1200px;
-}
-.o-nas-2 h2 {
-    font-size: 24px;
-    margin: 20px;
-}
-.o-nas-2 p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-top: 15px;
+.contact-box:hover {
+    background-color: var(--hover-pink);
 }
 
-.o-nas-3 {
-    text-align: center;
-    padding: 0 15px;
-    margin: 20px;
-    max-width: 1200px;
-}
-.o-nas-3 h2 {
-    font-size: 24px;
-    margin: 20px;
-}
-.o-nas-3 p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-top: 15px;
+.material-symbols-outlined {
+    font-size: 1.2rem;
+    color: #fff; /* Bílá ikona */
 }
 
-.o-nas-4 {
-    text-align: center;
-    padding: 0 15px;
-    margin: 20px;
-    max-width: 1200px;
-}
-.o-nas-4 h2 {
-    font-size: 24px;
-    margin: 20px;
-}
-.o-nas-4 p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-top: 15px;
+/* --- TLAČÍTKO CERTIFIKÁT --- */
+.cert-btn {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--primary-pink);
+    border: 2px solid var(--primary-pink);
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
-.o-nas-kontakt {
-    text-align: center;
-    background: pink;
-    padding: 25px 15px;
-    margin-top: 30px;
-}
-.o-nas-kontakt h2 {
-    font-size: 22px;
-}
-.o-nas-kontakt p {
-    font-size: 16px;
+.cert-btn:hover {
+    background-color: var(--primary-pink);
+    color: #fff;
 }
 
-@media (min-width: 700px) {
-    .o-nas-hlava h1 {
-        font-size: 70px;
+
+/* --- TABLETY A POČÍTAČE --- */
+@media (min-width: 768px) {
+    .about-section {
+        padding: 60px 20px;
     }
-    .o-nas-1 h2 {
-        font-size: 40px;
-        margin: 20px;
+
+    .page-header {
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
-    .o-nas-1 p {
-        font-size: 20px;
-        margin: 20px;
+
+    .page-title {
+        font-size: 2.8rem;
     }
-    .o-nas-2 h2 {
-        font-size: 40px;
-        margin: 20px;
+
+    .page-subtitle {
+        font-size: 1.2rem;
     }
-    .o-nas-2 p {
-        font-size: 20px;
-        margin: 20px;   
+
+    .team-list {
+        gap: 60px;
     }
-     .o-nas-3 h2 {
-        font-size: 40px;
-        margin: 20px;
+
+    .employee-card {
+        padding: 40px 50px;
+        gap: 50px;
     }
-    .o-nas-3 p {
-        font-size: 20px;
-        margin: 20px;
+
+    .employee-photo {
+        width: 220px;
+        height: 220px;
     }
-     .o-nas-4 h2 {
-        font-size: 40px;
-        margin: 20px;
+
+    .employee-info {
+        align-items: flex-start;
     }
-    .o-nas-4 p {
-        font-size: 20px;
-        margin: 20px;
+
+    .contact-boxes {
+        flex-direction: row;
+        width: auto;
     }
-    .o-nas-kontakt h2 {
-        font-size: 40px;
+
+    .employee-card:nth-child(odd) {
+        flex-direction: row-reverse;
+        text-align: left;
     }
-    .o-nas-kontakt p {
-        font-size: 20px;
+    
+    .employee-card:nth-child(odd) .employee-info {
+        align-items: flex-start;
+    }
+
+    .employee-card:nth-child(even) {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .employee-card:nth-child(even) .employee-info {
+        align-items: flex-start;
     }
 }
