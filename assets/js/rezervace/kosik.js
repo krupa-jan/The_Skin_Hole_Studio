@@ -21,6 +21,8 @@ function addToCart(serviceName, serviceId) {
         };
     }
     updateCartUI();
+
+    showNotification(`<b>${serviceName}</b> přidáno do košíku!`);
 }
 
 // Odejmutí jednoho kusu z košíku
@@ -63,8 +65,34 @@ function updateCartUI() {
     }
 }
 
+function showNotification(message) {
+    const area = document.getElementById('notification-area');
+    if (!area) return; // Pojistka, kdyby chyběl div v HTML
+
+    const toast = document.createElement('div');
+    toast.className = 'toast-notification';
+    
+    toast.innerHTML = `
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4caf50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <span>${message}</span>
+    `;
+
+    area.appendChild(toast);
+
+    setTimeout(() => {
+        toast.classList.add('fade-out');
+        toast.addEventListener('animationend', () => {
+            toast.remove();
+        });
+    }, 3000);
+}
+
 // Příprava na odeslání do PHP
 function submitReservation() {
     console.log("Odesílám data:", cart);
     alert("Probíhá příprava databáze, tato akce je nedostupná!");
 }
+

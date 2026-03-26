@@ -4,20 +4,43 @@
     --hover-pink: #d84570;
     --bg-light: #fafafa;
     --text-dark: #222;
+    --text-gray: #666;
     --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* --- ZÁKLADNÍ LAYOUT (MOBIL) --- */
 .booking-section {
     padding: 20px 15px;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-bottom: 100px; 
+}
+
+.page-header {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.page-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0 0 10px 0;
+}
+
+.page-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-gray);
+    margin: 0;
 }
 
 .booking-container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 40px;
 }
 
@@ -25,11 +48,12 @@
     width: 100%;
 }
 
-/* --- ZÁLOŽKY (TABS) --- */
 .tabs {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
     gap: 10px;
-    overflow-x: auto; 
+    overflow-x: auto;
     padding-bottom: 15px;
     margin-bottom: 25px;
     border-bottom: 2px solid #eee;
@@ -41,6 +65,7 @@
 .tab-btn {
     background: #fff;
     border: 1px solid #ddd;
+    font-family: inherit;
     font-size: 1rem;
     font-weight: 600;
     color: #555;
@@ -72,18 +97,18 @@
     gap: 15px;
 }
 
-/* --- KOŠÍK --- */
 .cart-area {
     width: 100%;
 }
 
 .cart-box {
-    background: #fff;
+    background: #ffffff !important; 
     padding: 25px;
     border-radius: 16px;
     box-shadow: var(--card-shadow);
-    position: sticky;
-    top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
 }
 
 .cart-box h3 {
@@ -114,7 +139,7 @@
 }
 
 .cart-list li.empty-cart {
-    color: #888;
+    color: var(--text-gray);
     justify-content: center;
     font-style: italic;
     border: none;
@@ -156,50 +181,74 @@
     transform: scale(1.2);
 }
 
-/* --- TLAČÍTKO V KOŠÍKU --- */
 #checkout-btn {
-    background-color: var(--primary-pink);
-    color: white;
+    display: block;
+    width: 100%;
     border: none;
     padding: 16px;
     border-radius: 30px;
     cursor: pointer;
     font-weight: bold;
     font-size: 1.1rem;
-    width: 100%;
     transition: all 0.3s ease;
+    text-align: center;
+    margin-top: auto; 
+}
+
+#checkout-btn:not(:disabled) {
+    background-color: var(--primary-pink);
+    color: white;
     box-shadow: 0 4px 12px rgba(240, 90, 136, 0.3);
 }
 
-#checkout-btn:hover:not(:disabled) {
+#checkout-btn:not(:disabled):hover {
     background-color: var(--hover-pink);
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(240, 90, 136, 0.4);
 }
 
 #checkout-btn:disabled {
-    background-color: #e0e0e0;
-    color: #999;
-    box-shadow: none;
+    background-color: #e0e0e0 !important;
+    color: #999 !important; 
+    box-shadow: none !important;
     cursor: not-allowed;
     transform: none;
 }
 
-/* --- DESKTOP ZOBRAZENÍ (od 992px) --- */
+/* --- DESKTOP ZOBRAZENÍ --- */
 @media (min-width: 992px) {
+    .booking-section {
+        padding: 40px 15px;
+    }
+
+    .page-title {
+        font-size: 2.8rem;
+    }
+
+    .page-subtitle {
+        font-size: 1.2rem;
+    }
+
     .booking-container {
-        flex-direction: row;
+        flex-direction: row; 
         align-items: flex-start;
     }
 
     .services-area {
         flex: 1;
         padding-right: 20px;
+        width: auto;
+        min-width: 0;
     }
 
     .cart-area {
         width: 380px;
         flex-shrink: 0;
+        position: sticky;
+        top: 20px;
+    }
+
+    .cart-box {
+        margin-top: 60px;
     }
 }
 

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <title>Služby | The Skin Hole Studio</title>
+    <title>Rezervace | The Skin Hole Studio</title>
 
     <?php require 'includes/html_head.php'; ?>
 
     <link rel="stylesheet" href="/assets/css/rezervace/rezervace.css">
     <link rel="stylesheet" href="/assets/css/rezervace/rezervace_template.css">
+    <link rel="stylesheet" href="/assets/css/rezervace/notification.css">
 
     <?php 
     require_once 'includes/rezervace/data/ucho_data.php';
@@ -23,11 +24,18 @@
 <body>
     <?php require 'includes/nav.php'; ?>
 
+    <div id="notification-area"></div>
+    
+    <div class="page-header">
+        <h1 class="page-title">Rezervace služeb</h1>
+        <p class="page-subtitle">Vyberte si svůj vysněný piercing a vytvořte si rezervaci.</p>
+    </div>
+
     <section class="booking-section">
+
         <div class="booking-container">
 
             <div class="services-area">
-                <h2 class="section-title">Vyberte si služby</h2>
                 
                 <div class="tabs">
                     <button class="tab-btn active" onclick="switchTab('tab-ucho')">Ucho</button>
@@ -72,31 +80,51 @@
 
                 <div id="tab-jazyk" class="tab-content">
                     <div class="services-grid">
-                        <p>Nabídka pro jazyk se připravuje...</p>
+                        <?php 
+                        foreach ($produkty_jazyk as $produkt) {
+                            include 'includes/rezervace/rezervace_template.php';
+                        } 
+                        ?>
                     </div>
                 </div>
 
                 <div id="tab-oboci" class="tab-content">
                     <div class="services-grid">
-                        <p>Nabídka pro obočí se připravuje...</p>
+                        <?php 
+                        foreach ($produkty_oboci as $produkt) {
+                            include 'includes/rezervace/rezervace_template.php';
+                        } 
+                        ?>
                     </div>
                 </div>
 
                 <div id="tab-ostatni" class="tab-content">
                     <div class="services-grid">
-                        <p>Ostatní nabídka obličeje se připravuje...</p>
+                        <?php 
+                        foreach ($produkty_ostatni_casti_obliceje as $produkt) {
+                            include 'includes/rezervace/rezervace_template.php';
+                        } 
+                        ?>
                     </div>
                 </div>
 
                 <div id="tab-telo" class="tab-content">
                     <div class="services-grid">
-                        <p>Nabídka pro tělo se připravuje...</p>
+                        <?php 
+                        foreach ($produkty_telo as $produkt) {
+                            include 'includes/rezervace/rezervace_template.php';
+                        } 
+                        ?>
                     </div>
                 </div>
 
                 <div id="tab-intimni" class="tab-content">
                     <div class="services-grid">
-                        <p>Intimní nabídka se připravuje...</p>
+                        <?php 
+                        foreach ($produkty_intimni as $produkt) {
+                            include 'includes/rezervace/rezervace_template.php';
+                        } 
+                        ?>
                     </div>
                 </div>
             </div>
