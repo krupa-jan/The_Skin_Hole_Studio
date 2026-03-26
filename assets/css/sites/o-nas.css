@@ -104,7 +104,7 @@ body {
 
 .contact-box {
     background-color: var(--primary-pink);
-    color: #fff;
+    color: #fff !important;
     padding: 12px 18px;
     border-radius: 12px;
     font-size: 0.95rem;
@@ -114,6 +114,15 @@ body {
     justify-content: center;
     gap: 10px;
     transition: background-color 0.3s;
+}
+
+.contact-box, .contact-box a {
+    text-decoration: none !important;
+    color: #fff !important
+}
+
+.contact-box:hover, .contact-box a:hover {
+    text-decoration: none !important;
 }
 
 .contact-box:hover {
