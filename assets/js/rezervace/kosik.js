@@ -11,12 +11,13 @@ function switchTab(tabId) {
 }
 
 // Přidání do košíku (s podporou více kusů)
-function addToCart(serviceName, serviceId) {
+function addToCart(serviceName, serviceId, price) {
     if (cart[serviceId]) {
         cart[serviceId].quantity += 1;
     } else {
         cart[serviceId] = {
             name: serviceName,
+            price: price,
             quantity: 1
         };
     }
@@ -42,26 +43,36 @@ function updateCartUI() {
     const checkoutBtn = document.getElementById('checkout-btn');
     
     cartList.innerHTML = '';
+    let total = 0;
     
     const cartKeys = Object.keys(cart);
 
     if (cartKeys.length === 0) {
         cartList.innerHTML = '<li class="empty-cart">Zatím jste nevybrali žádnou službu.</li>';
         checkoutBtn.disabled = true;
+        checkoutBtn.innerHTML = "Přejít k objednávce";
     } else {
         cartKeys.forEach(id => {
             const item = cart[id];
+            total += item.price * item.quantity;
+
             const li = document.createElement('li');
             li.innerHTML = `
                 <div class="cart-item-info">
                     <span class="item-qty">${item.quantity}x</span>
-                    <span class="item-name">${item.name}</span>
+                    <div class="item-details">
+                        <span class="item-name">${item.name}</span>
+                        <span class="item-price-unit">${item.price} Kč/ks</span>
+                    </div>
                 </div>
                 <button class="remove-btn" onclick="removeFromCart('${id}')" title="Odebrat">×</button>
             `;
             cartList.appendChild(li);
         });
+        
+        // Aktualizace textu na tlačítku s celkovou cenou
         checkoutBtn.disabled = false;
+        checkoutBtn.innerHTML = `Přejít k objednávce (Celkem: ${total} Kč)`;
     }
 }
 
@@ -92,7 +103,13 @@ function showNotification(message) {
 
 // Příprava na odeslání do PHP
 function submitReservation() {
-    console.log("Odesílám data:", cart);
-    alert("Probíhá příprava databáze, tato akce je nedostupná!");
+    if (Object.keys(cart).length === 0) {
+        alert("Nejdříve si vyberte alespoň jednu službu!");
+        return;
+    }
+
+    localStorage.setItem('skin_hole_cart', JSON.stringify(cart));
+
+    window.location.href = 'rezervace-formular.php';
 }
 

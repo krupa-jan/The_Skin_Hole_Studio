@@ -181,6 +181,16 @@
     transform: scale(1.2);
 }
 
+.item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-price-unit {
+    font-size: 0.8rem;
+    color: var(--text-gray);
+}
+
 #checkout-btn {
     display: block;
     width: 100%;
@@ -193,6 +203,8 @@
     transition: all 0.3s ease;
     text-align: center;
     margin-top: auto; 
+
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 #checkout-btn:not(:disabled) {

@@ -81,6 +81,13 @@
     background-color: var(--hover-pink, #d84570);
 }
 
+.service-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-pink);
+    margin-bottom: 12px;
+}
+
 /* --- ÚPRAVY PRO RŮZNÉ VELIKOSTI OBRAZOVEK --- */
 
 /* Velmi malé mobily */
@@ -98,6 +105,10 @@
     .service-content .btn-pink {
         align-self: stretch;
         text-align: center;
+    }
+    .service-price {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
     }
 }
 
