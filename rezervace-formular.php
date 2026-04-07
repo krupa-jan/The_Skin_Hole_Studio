@@ -13,6 +13,13 @@
     
     <section class="reservation-section">
         <div class="form-container">
+
+            <div class="user-warning-box">
+                <strong>Upozornění:</strong> Tato stránka slouží pouze pro <strong>výukové účely</strong>.
+                Vyplněním formuláře nedojde ke skutečné rezervaci služeb. Berte prosím na vědomí, 
+                že <strong>veškerá zadaná data budou veřejně přístupná</strong> v administrátorském panelu.
+            </div>
+
             <h2 class="form-title">Rezervovat <span>termín</span></h2>
             <p class="form-subtitle">Vyplňte údaje níže a my se postaráme o zbytek.</p>
 

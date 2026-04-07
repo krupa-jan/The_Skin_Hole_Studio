@@ -66,13 +66,7 @@ if ($_POST) {
         }
 
         // --- ÚSPĚCH ---
-        // Vyčistíme localStorage v prohlížeči pomocí JS
-        echo "
-        <script>
-            localStorage.removeItem('skin_hole_cart');
-            alert('Rezervace byla úspěšně odeslána!');
-            window.location.href = 'index.php';
-        </script>";
+        header("Location: thanks.php");
 
     } catch (Exception $e) {
         echo "<h2 style='color: red;'>Chyba při ukládání:</h2> " . $e->getMessage();

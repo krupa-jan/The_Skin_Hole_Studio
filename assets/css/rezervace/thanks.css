@@ -1,0 +1,109 @@
+:root {
+    --primary-pink: #f05a88;
+    --hover-pink: #d84570;
+    --text-dark: #222;
+    --text-gray: #666;
+    --bg-light: #fafafa;
+}
+
+.thanks-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--bg-light);
+}
+
+.thanks-card {
+    background: #ffffff;
+    max-width: 500px;
+    width: 100%;
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    animation: slideUp 0.6s ease-out;
+}
+
+/* Animace ikony */
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #fce4ec;
+    color: var(--primary-pink);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+.success-icon svg {
+    width: 40px;
+    height: 40px;
+    animation: scaleIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s both;
+}
+
+.thanks-card h1 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.thanks-card p {
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--primary-pink);
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(240, 90, 136, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-pink);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(240, 90, 136, 0.4);
+}
+
+.small-info {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.small-info a {
+    color: var(--primary-pink);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* --- ANIMACE --- */
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .thanks-card {
+        padding: 40px 20px;
+    }
+    .thanks-card h1 {
+        font-size: 1.6rem;
+    }
+}
