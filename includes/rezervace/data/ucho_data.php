@@ -38,7 +38,7 @@ $produkty_ucho = [
     [
         "id" => "tragus",
         "nazev" => "Tragus",
-        "popis" => "Nachází se na malém chrupavčitém výčn??? před zvukovodem.",
+        "popis" => "Nachází se na malém chrupavčitém výčnělku před zvukovodem.",
         "obrazek" => "/assets/images/rezervace/ucho/tragus.webp",
         'cena' => 0
     ],
