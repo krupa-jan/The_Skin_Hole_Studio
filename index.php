@@ -12,7 +12,7 @@
     <?php require 'includes/nav.php'; ?>
 
     <div class="top-section">
-        <img src="/assets/images/example_images/store-example.jpg" class="top-section-bg" draggable="false">
+        <img src="/assets/images/index/studio.webp" class="top-section-bg" draggable="false">
         <div class="top-section-overlay"></div>
 
         <img src="/assets/images/logo/logo.svg" class="top-section-logo" draggable="false">
@@ -25,7 +25,7 @@
 
     <div class="about-section">
         <div class="about-section-image">
-            <img src="/assets/images/example_images/test-image.jpg" draggable="false">
+            <img src="/assets/images/index/o-nas.webp" draggable="false">
         </div>
         <div class="about-section-content">
             <h2>
@@ -36,9 +36,24 @@
             Poskytujeme odbornou následnou péči a nabízíme také doplňky a přípravky pro správnou péči o piercing. 
             Naší prioritou je bezpečnost, kvalita a spokojenost každého klienta. 
             </p>
-            
+            <a href="/o-nas" class="cta-button-about">Zjistit více</a>
         </div>
     </div>
+
+    <div class="giftcard-section">
+    <div class="giftcard-section-image">
+        <img src="/assets/images/index/card.webp" draggable="false" alt="Dárkový poukaz">
+    </div>
+    <div class="giftcard-section-content">
+        <h2>
+            Dárek, který potěší každého!
+        </h2>
+        <p>
+            Věnuj svému blízkému poukázku na naše služby. Stačí nám zavolat nebo napsat a po vzájemné domluvě s vámi vybereme vhodný poukaz.
+        </p>
+    </div>
+</div>
+    
 
     <div class="instagram-section">
         

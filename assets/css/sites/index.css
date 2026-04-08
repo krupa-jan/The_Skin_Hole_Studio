@@ -1,18 +1,14 @@
 /*========== HLAVNÍ SEKCE ==========*/
 .top-section {
     margin-top: 60px;
-
     width: 100%;
     height: 80svh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 60px;
-
     position: relative;
-
     border-bottom: 1px solid rgba(0, 0, 0, 0.9);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
@@ -23,9 +19,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-    
     z-index: -999;
 }
 
@@ -35,34 +29,22 @@
     left: 0;
     width: 100%;
     height: 100%;
-    
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
-    
     z-index: -998; 
 }
 
 .top-section-logo {
     display: block;
-
     width: 70%;
     height: auto;
-
     max-width: 350px;
-
     animation: zoom-in-out 3s ease-in-out infinite;
 }
 
-
 @keyframes zoom-in-out {
-    0% {
-        transform: scale(1); 
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 
 .top-section-cta {
@@ -75,24 +57,18 @@
 
 .cta-button-primary {
     display: inline-block;
-    
     background-color: #ffffff;
     color: #121212;
-
     padding: 15px 35px;
     font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
-
     border-radius: 30px;
-    border: 2px solid;
-    border-color: #ffffff;
-
+    border: 2px solid #ffffff;
     transition: all 0.3s ease;
     cursor: pointer;
-
     width: 280px;
     text-align: center;
     box-sizing: border-box;
@@ -107,24 +83,18 @@
 
 .cta-button-secondary {
     display: inline-block;
-
     background-color: transparent;
     color: #ffffff;
-
     padding: 15px 35px;
     font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
-    
     border-radius: 30px;
-    border: 2px solid;
-    border-color: #ffffff;
-
+    border: 2px solid #ffffff;
     transition: all 0.3s ease;
     cursor: pointer;
-
     width: 280px;
     text-align: center;
     box-sizing: border-box;
@@ -136,24 +106,21 @@
     transform: translateY(-2px);
 }
 
-/*========== SLUŽBY ==========*/
-
 /*========== O NÁS ==========*/
 .about-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 70px 20px;
+    margin: 80px 20px;
 }
 
 .about-section-image {
     width: 100%;
     margin-bottom: 20px;
-
 }
 
-.about-section-image img{
+.about-section-image img {
     width: 100%;
     border-radius: 25px;
     display: block;
@@ -173,9 +140,80 @@
     font-weight: 700;
     font-size: 36px;
     margin-bottom: 10px;
+    color: #121212;
 }
 
 .about-section-content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.cta-button-about {
+    display: inline-block;
+    background-color: #EE5D7A;
+    color: #ffffff;
+    padding: 15px 35px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 2px solid #EE5D7A;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 280px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.cta-button-about:hover {
+    background-color: transparent;
+    color: #EE5D7A;
+    transform: translateY(-2px);
+}
+
+/*========== DÁRKOVÉ POUKAZY ==========*/
+.giftcard-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px 20px;
+}
+
+.giftcard-section-image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.giftcard-section-image img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+    border-radius: 0; 
+    box-shadow: none;    
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3));
+}
+
+.giftcard-section-content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.giftcard-section-content h2 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #121212;
+}
+
+.giftcard-section-content p {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
@@ -186,10 +224,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 70px 20px;
+    margin: 80px 20px;
 }
 
-/* Hlavička sladěná s "O Nás" */
 .ig-header {
     display: flex;
     align-items: center; 
@@ -200,30 +237,26 @@
 
 .ig-header h2 {
     display: flex;
-    align-items: center; /* Zarovná ikonku a text na střed výšky */
-    gap: 12px;           /* Mezera mezi ikonkou a slovem */
+    align-items: center;
+    gap: 12px;
     font-weight: 700;
-    font-size: 36px;     /* Kopíruje "O Nás" základ */
+    font-size: 36px;
     margin: 0;
     color: #121212;
 }
 
 .ig-header h2 i {
-    color: #EE5D7A;      /* Ikonka v růžové barvě pro oživení */
-    font-size: 1.1em;    /* Aby byla ikonka opticky stejně velká jako text */
+    color: #EE5D7A;
+    font-size: 1.1em;
 }
 
-/* Mřížka fotek */
 .instagram-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Zpátky pod sebou */
-    gap: 25px; /* Trochu větší mezera mezi fotkami, když jsou pod sebou */
+    grid-template-columns: 1fr;
+    gap: 25px;
     width: 100%;
-    
-    /* Tohle je to kouzlo, co zabrání gigantickým rozměrům na mobilu */
     max-width: 340px; 
-    
-    margin: 0 auto 40px auto; /* Vycentruje mřížku uprostřed obrazovky */
+    margin: 0 auto 40px auto;
 }
 
 .instagram-post {
@@ -242,7 +275,6 @@
     transition: transform 0.4s ease;
 }
 
-/* Růžový překryv */
 .instagram-overlay {
     position: absolute;
     top: 0;
@@ -276,9 +308,8 @@
     transform: translateY(0);
 }
 
-/* Tlačítko - Sladěné se zbytkem webu */
 .cta-button-instagram {
-    display: inline-block; /* Změněno z flex, už nemáme ikonku */
+    display: inline-block;
     background-color: #EE5D7A;
     color: #ffffff;
     padding: 15px 35px;
@@ -291,8 +322,6 @@
     border: 2px solid #EE5D7A;
     transition: all 0.3s ease;
     cursor: pointer;
-    
-    /* Přidáno pro sjednocení s .cta-button-primary */
     width: 280px;
     text-align: center;
     box-sizing: border-box;
@@ -309,37 +338,48 @@
     .about-section {
         flex-direction: row; 
         gap: 30px;
-        margin: 60px 30px; 
+        margin: 80px 30px; 
     }
-    .about-section-image {
+    
+    .giftcard-section {
+        flex-direction: row-reverse;
+        gap: 30px;
+        margin: 80px 30px; 
+    }
+
+    .instagram-section {
+        margin: 80px 30px;
+    }
+
+    .about-section-image, .giftcard-section-image {
         flex: 1;
         margin: 0;
     }
-    .about-section-content {
+
+    .about-section-content, .giftcard-section-content {
         flex: 1;
         margin: 0;
         align-items: flex-start;
         text-align: left;
     }
-    .about-section-content h2 {
+
+    .about-section-content h2, .giftcard-section-content h2 {
         font-size: 32px; 
-        margin-bottom: 15px;
     }
-    .about-section-content p {
+
+    .about-section-content p, .giftcard-section-content p {
         font-size: 16px;
         line-height: 1.5;
     }
     
-    
-
-
     .instagram-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 vedle sebe */
-        max-width: 1000px; /* Vrátíme plnou šířku pro větší displeje */
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1000px;
         gap: 20px;
     }
+
     .ig-header h2 {
-        font-size: 32px; /* Kopíruje O nás pro tablet */
+        font-size: 32px;
     }
 }
 
@@ -350,58 +390,60 @@
         gap: 20px;
     }
 
-    .about-section {
+    .about-section, .giftcard-section {
         margin: 100px auto;
         width: 90%;
         max-width: 1200px;
         gap: 60px;
     }
-    .about-section-content h2 {
+
+    .about-section-content h2, .giftcard-section-content h2 {
         font-size: 42px;
         margin-bottom: 15px;
     }
 
-    .about-section-content p {
+    .about-section-content p, .giftcard-section-content p {
         font-size: 18px;
         line-height: 1.6;
     }
-    
-
 
     .instagram-section {
         margin: 100px auto;
         width: 90%;
         max-width: 1200px;
     }
+
     .instagram-grid {
         gap: 30px;
     }
+
     .ig-header {
         margin-bottom: 40px;
     }
+
     .ig-header h2 {
-        font-size: 42px; /* Kopíruje O nás pro PC */
+        font-size: 42px;
     }
 }
 
-/*========== VELKÉ MONITORY (FullHD a více) ==========*/
+/*========== VELKÉ MONITORY ==========*/
 @media (min-width: 1600px) {
-    .about-section {
+    .about-section, .giftcard-section {
         max-width: 1500px; 
     }
 
-    .about-section-content h2 {
+    .about-section-content h2, .giftcard-section-content h2 {
         font-size: 52px;
     }
 
-    .about-section-content p {
+    .about-section-content p, .giftcard-section-content p {
         font-size: 22px;
     }
 
-
     .ig-header h2 {
-        font-size: 52px; /* Kopíruje O nás pro velké monitory */
+        font-size: 52px;
     }
+
     .ig-header {
         font-size: 22px;
     }
