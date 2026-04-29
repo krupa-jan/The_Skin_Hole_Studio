@@ -24,7 +24,7 @@
 
         <div class="footer-section contact">
             <h3>Kontakt</h3>
-            <p><i class="fas fa-map-marker-alt"></i> 28. října 1598, 738 01 Frýdek-Místek</p> 
+            <p><i class="fas fa-map-marker-alt"></i> 28. října 3348/65, Ostrava 2, Ostrava 702 00</p> 
             <p><i class="fas fa-phone"></i> +420 785 632 854</p>
             <p><i class="fas fa-envelope"></i> theskinholestudio@seznam.cz</p>
         </div>

@@ -54,6 +54,29 @@
 <body>
     <?php require 'includes/nav.php'; ?>
 
+    <div class="page-header1">
+        <h1 class="page-title">O nás</h1>
+        <p class="page-subtitle">Zjistěte více o firmě The Skin Hole Studio.</p>
+    </div>
+
+    <section class="about-intro">
+        <div class="about-section-image">
+            <img src="/assets/images/o-nas/o-nas.webp" alt="The Skin Hole Studio">
+        </div>
+        <div class="about-section-content">
+            <p>
+                Dbáme na maximální čistotu pracovního prostředí a používáme pouze sterilní nástroje a postupy, které minimalizují riziko komplikací. 
+                Naším hlavním cílem je zajistit bezpečnost, vysokou kvalitu služeb a spokojenost každého klienta, který nás navštíví.
+                Součástí našich služeb je také odborná následná péče, která je klíčová pro správné hojení piercingu. 
+                Klientům poskytujeme podrobné informace o péči po zákroku a nabízíme široký sortiment doplňků a 
+                přípravků určených k podpoře hojení. V naší nabídce naleznete například dezinfekční prostředky, produkty 
+                pro citlivou pokožku či přípravky vhodné i pro alergiky. Díky tomu si zákazníci mohou být jisti, že mají k 
+                dispozici vše potřebné pro bezproblémovou péči o svůj nový piercing.
+                Velký důraz klademe také na pohodlí a dostupnost našich služeb.
+            </p>
+        </div>
+    </section>
+
     <section class="about-section">
         <div class="about-container">
             <div class="page-header">

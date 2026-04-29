@@ -58,7 +58,7 @@
     <div class="instagram-section">
         
         <div class="ig-header">
-            <h2><i class="fab fa-instagram"></i> Sleduj nás!</h2>
+            <h2><i class="fab fa-instagram"></i> Instagram</h2>
         </div>
         
         <div class="instagram-grid">
@@ -86,6 +86,27 @@
 
         <div class="instagram-cta">
             <a href="https://www.instagram.com/theskinholestudio/" target="_blank" class="cta-button-instagram">
+                Sledovat
+            </a>
+        </div>
+    </div>
+
+    <div class="instagram-section">
+        <div class="ig-header">
+            <h2><i class="fab fa-tiktok"></i>TikTok</h2>
+        </div>
+    
+        <div class="instagram-grid">
+            <a href="https://www.tiktok.com/@theskinhole.studio/video/7618896341569178902" target="_blank" class="instagram-post">
+                <img src="/assets/images/tiktok/tiktok1.webp" alt="TikTok post" draggable="false">
+                <div class="instagram-overlay">
+                    <i class="fab fa-tiktok"></i>
+                </div>
+            </a>
+        </div>
+    
+        <div class="instagram-cta">
+            <a href="https://www.tiktok.com/@theskinhole.studio" target="_blank" class="cta-button-instagram">
                 Sledovat
             </a>
         </div>

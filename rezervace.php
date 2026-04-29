@@ -142,6 +142,23 @@
         </div>
 </section>
 
+<section class="about-section">
+    <div class="about-section-content">
+        <h2>Formulář pro nezletilé</h2>
+        <p>
+            Pro nezletilé zákazníky je u nás nutný souhlas zákonného zástupce. 
+            Před samotným piercingem je potřeba vyplnit a podepsat formulář, 
+            který nám umožňuje zákrok bezpečně provést. Doporučujeme, aby 
+            zákonný zástupce přišel osobně s nezletilým, případně poskytl 
+            ověřený souhlas. Dbáme na maximální bezpečnost, hygienu a 
+            individuální přístup ke každému klientovi.
+        </p>
+        <a href="/assets/documents/formulare/nezletily.pdf" target="_blank" class="cta-button-about">
+            Otevřít formulář
+        </a>
+    </div>
+</section>
+
 <?php require 'includes/footer.php'; ?>
 
 <script src="/assets/js/rezervace/kosik.js"></script>

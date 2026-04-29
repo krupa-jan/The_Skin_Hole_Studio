@@ -5,7 +5,7 @@ $produkty_oboci = [
         "nazev" => "Eyebrow",
         "popis" => "Obočí, většinou svisle nebo šikmo.",
         "obrazek" => "/assets/images/rezervace/oboci/eyebrow.webp",
-        'cena' => 0
+        'cena' => 800
     ],
 ];
 ?>
